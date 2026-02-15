@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Encodage + responsive mobile -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <!-- Titre de l'onglet -->
+  <title>Crusty Persan</title>
+  <!-- PWA (ajout à l'écran d'accueil) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- Couleur du navigateur / barre du haut sur mobile -->
+  <meta name="theme-color" content="#6A1B9A" />
+  <!-- Réglages iPhone pour mode "web app" -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="apple-touch-icon" href="img/LOGO(2).jpg" />
+  <!-- CSS du site -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- PARTIE HEADER (barre du haut) -->
+  <header class="site-header">
+    <div class="wrap">
+      <!-- Logo + nom -->
+      <div class="brand">
+        <img src="img/LOGO(2).jpg" alt="Logo Crusty Persan" />
+        <div class="brand-text">
+          <strong>The Crust'y</strong>
+          <span class="muted">• Persan •</span>
+        </div>
+      </div>
+
+      <!-- Bouton rapide pour descendre au menu -->
+      <a class="header-cta" href="#menu">Voir le menu</a>
+    </div>
+  </header>
+
+  <!-- HERO (grosse image + texte d'accroche) -->
+  <section class="hero" aria-label="Présentation">
+    <div class="hero-media">
+      <!-- Image de fond (à la place de la vidéo) -->
+      <img src="img/Capture d'écran 2026-02-15 004204.png" alt="" loading="eager" decoding="async">
+
+      <!-- Overlay sombre par dessus l'image (pour lire le texte) -->
+      <div class="hero-overlay"></div>
+
+      <!-- Contenu texte par dessus l'image -->
+      <div class="hero-content">
+        <h1>Crusty Persan 95340 🍗</h1>
+        <p>Choisis, Commande, Récupére.<br>
+           Simple, Rapide, Efficace.</p>
+
+        <!-- Boutons d'accès rapide -->
+        <div class="hero-actions">
+          <a class="btn primary" href="#menu">Menu</a>
+          <a class="btn ghost" href="#infos">Infos</a>
+          <a class="btn ghost" href="#a-propos">A propos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTIE INFOS RAPIDES -->
+  <section id="infos" class="section">
+    <div class="section-title">
+      <h2>Infos rapides</h2>
+      <p class="muted">(contenu a remplire.)</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Horaires</h3>
+        <p>Lun-Dim : 11:30-23:00</p>
+        <p class="muted">(personnaliser)</p>
+      </article>
+
+      <article class="card">
+        <h3>Adresse</h3>
+        <p>Persan, 95340</p>
+        <p class="muted">(personnaliser)</p>
+      </article>
+
+      <article class="card">
+        <h3>Contact</h3>
+        <p><a href="tel:+33123456789">Appeler</a></p>
+        <p class="muted">(personnaliser)</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PARTIE MENU -->
+<section id="menu" class="section">
+  <div class="section-title">
+    <h2>Menu</h2>
+    <div class="menu-switch">
+      <button class="switch-btn active" data-target="menu-plats">Menu</button>
+      <button class="switch-btn" data-target="menu-boissons">Boissons</button>
+      <button class="switch-btn" data-target="menu-desserts">Desserts</button>
+      <button class="switch-btn" data-target="menu-accompagnements">Accompagnements</button>
+    </div>
+  </div>
+
+  <!-- MENU PLATS -->
+  <div id="menu-plats" class="menu-grid">
+    <article class="menu-item">
+      <img src="img/ChatGPT Image 12 févr. 2026, 08_03_03.jpg" alt="Riz Crusty" loading="lazy">
+      <div class="menu-body">
+        <h3>Menu 1</h3>
+        <p class="muted">Du riz, de la sauce, et du poulet</p>
+        <div class="menu-row">
+          <span class="price">9,90€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/ChatGPT Image 12 févr. 2026, 08_03_03(2).jpg" alt="Menu 2" loading="lazy">
+      <div class="menu-body">
+        <h3>Menu 2</h3>
+        <p class="muted">Du riz, de la sauce, et du poulet</p>
+        <div class="menu-row">
+          <span class="price">0,00€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/ChatGPT Image 12 févr. 2026, 08_03_03(3).jpg" alt="Menu 2" loading="lazy">
+      <div class="menu-body">
+        <h3>Menu 3</h3>
+        <p class="muted">Description</p>
+        <div class="menu-row">
+          <span class="price">0,00€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/ChatGPT Image 12 févr. 2026, 08_03_03(4).jpg" alt="Menu 2" loading="lazy">
+      <div class="menu-body">
+        <h3>Menu Etudiant</h3>
+        <p class="muted">1 Crusty L + 1 Boisson</p>
+        <div class="menu-row">
+          <span class="price">7,00€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- MENU DESSERTS -->
+  <div id="menu-desserts" class="menu-grid" style="display:none;">
+    <article class="menu-item">
+      <img src="img/MILCHAKE.jpg" alt="Dessert" loading="lazy">
+      <div class="menu-body">
+        <h3>Dessert 1</h3>
+        <p class="muted">Description du dessert</p>
+        <div class="menu-row">
+          <span class="price">3,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/potdetiramisu.jpg" alt="Dessert" loading="lazy">
+      <div class="menu-body">
+        <h3>Dessert 2</h3>
+        <p class="muted">Description du dessert</p>
+        <div class="menu-row">
+          <span class="price">3,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/tarteaudaim.jpg" alt="Dessert" loading="lazy">
+      <div class="menu-body">
+        <h3>Dessert 3</h3>
+        <p class="muted">Description du dessert</p>
+        <div class="menu-row">
+          <span class="price">3,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/dessert.jpg" alt="Dessert" loading="lazy">
+      <div class="menu-body">
+        <h3>Dessert 4</h3>
+        <p class="muted">Description du dessert</p>
+        <div class="menu-row">
+          <span class="price">3,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- MENU BOISSONS -->
+  <div id="menu-boissons" class="menu-grid" style="display:none;">
+    <article class="menu-item">
+      <img src="img/CANNETTE.jpg" alt="Boisson" loading="lazy">
+      <div class="menu-body">
+        <h3>Boisson 1</h3>
+        <p class="muted">Description de la boisson</p>
+        <div class="menu-row">
+          <span class="price">2,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/bois2.jpeg" alt="Boisson" loading="lazy">
+      <div class="menu-body">
+        <h3>Boisson 2</h3>
+        <p class="muted">Description de la boisson</p>
+        <div class="menu-row">
+          <span class="price">2,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/bois3.jpeg" alt="Boisson" loading="lazy">
+      <div class="menu-body">
+        <h3>Boisson 3</h3>
+        <p class="muted">Description de la boisson</p>
+        <div class="menu-row">
+          <span class="price">2,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/boisson.jpg" alt="Boisson" loading="lazy">
+      <div class="menu-body">
+        <h3>Boisson 4</h3>
+        <p class="muted">Description de la boisson</p>
+        <div class="menu-row">
+          <span class="price">2,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- MENU ACOMPAGNEMENTS -->
+  <div id="menu-accompagnements" class="menu-grid" style="display:none;">
+    <article class="menu-item">
+      <img src="img/acompagnement1.jpg" alt="acompagnement" loading="lazy">
+      <div class="menu-body">
+        <h3>acompagnement 1</h3>
+        <p class="muted">Description de l'acompagnement</p>
+        <div class="menu-row">
+          <span class="price">2,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/acompagnement2.jpg" alt="acompagnement" loading="lazy">
+      <div class="menu-body">
+        <h3>acompagnement 2</h3>
+        <p class="muted">Description de l'acompagnement</p>
+        <div class="menu-row">
+          <span class="price">2,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div> 
+    </article>
+
+    <article class="menu-item">
+      <img src="img/acompagnement3.jpg" alt="acompagnement" loading="lazy">
+      <div class="menu-body">
+        <h3>acompagnement 3</h3>
+        <p class="muted">Description de l'acompagnement</p>
+        <div class="menu-row">
+          <span class="price">2,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <img src="img/acompagnement4.jpg" alt="acompagnement" loading="lazy">
+      <div class="menu-body">
+        <h3>acompagnement 4</h3>
+        <p class="muted">Description de l'acompagnement</p>
+        <div class="menu-row">
+          <span class="price">2,50€</span>
+          <button class="add">Commander</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+  <!-- PARTIE A PROPOS -->
+  <section id="a-propos" class="section">
+    <div class="section-title">
+      <h2>À propos</h2>
+      <p class="muted">(contenue a replire)</p>
+    </div>
+
+    <div class="card">
+      <p>
+        Crusty Persan (contenue a remplire) 5 lignes de préference.
+      </p>
+    </div>
+  </section>
+
+  <!-- BARRE D’ACTIONS TYPE APPLI -->
+  <nav class="bottom-bar" aria-label="Actions rapides">
+    <a href="#menu" class="bb-item">
+      <span class="bb-emoji" aria-hidden="true">🍴</span>
+      <span class="bb-label">Menu</span>
+    </a>
+    <a href="tel:+33123456789" class="bb-item">
+      <span class="bb-emoji" aria-hidden="true">📱</span>
+      <span class="bb-label">Appeler</span>
+    </a>
+    <a href="#" id="open-cart" class="bb-main">
+      <span class="bb-emoji" aria-hidden="true">🧺</span>
+      <span class="bb-label">Panier</span>
+      <span id="cart-count" class="cart-count">0</span>
+    </a>
+    <a href="https://maps.google.com/?q=Persan%2095340" class="bb-item" target="_blank" rel="noreferrer">
+      <span class="bb-emoji" aria-hidden="true">📍</span>
+      <span class="bb-label">Itinéraire</span>
+    </a>
+  </nav>
+
+  <!-- PANIER -->
+  <div id="cart-panel" class="cart-panel">
+    <div class="cart-header">
+      <h3>Votre commande</h3>
+      <button id="close-cart">✖</button>
+    </div>
+    <ul id="cart-items"></ul>
+    <p class="cart-total">Total : <span id="cart-total">0€</span></p>
+  </div>
+
+  <!-- PARTIE POP UP DE CONFIRMATION DE L'AJOUT -->
+<div id="confirm-popup" class="confirm-hidden">
+  <div class="confirm-box">
+    <img src="img/confirm.png" alt="" class="confirm-icon">
+    <p id="confirm-text">Voulez-vous ajouter cet article au panier ?</p>
+    <div class="confirm-buttons">
+      <button id="confirm-yes">Oui</button>
+      <button id="confirm-no">Non</button>
+    </div>
+  </div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "Crusty Persan",
+  "short_name": "Crusty",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#6A1B9A",
+  "theme_color": "#6A1B9A",
+  "icons": [
+    {
+      "src": "img/LOGO(2).jpg",
+      "sizes": "any",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "img/LOGO(2).jpg",
+      "sizes": "any",
+      "type": "image/jpeg"
+    }
+  ]
+}
